@@ -1,0 +1,15 @@
+{% extends 'news/base.html' %}
+{% load filters %}
+
+{% block content %}
+    <h1>Список новостей</h1>
+    <ul>
+        {% for news in news_list %}
+            <li>
+                <a href="{% url 'news:news_detail' news.id %}">{{ news.title|censor }}</a>
+                ({{ news.pub_date|date:"d-m-Y H:i" }})
+                {{ news.content|censor|slice:":50" }}...
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
