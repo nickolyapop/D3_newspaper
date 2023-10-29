@@ -16,6 +16,6 @@ In _PowerShell_ или _cmd_:  venv\Scripts\activate
 
 4. You can run the development server:
 
-python manage.py run
+python manage.py runserver
 
 user: admin pasw: admin
