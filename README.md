@@ -9,7 +9,7 @@ completed task D3 skillfactory
 
 python -m venv venv
 
-In _PowerShell_ или _cmd_:  venv\Sripts\activate
+In _PowerShell_ или _cmd_:  venv\Scripts\activate
 
 3. Install project dependencies:
  pip install -r requirements.txt
